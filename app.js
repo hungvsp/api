@@ -7,7 +7,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use("/", require("./controlers"));
 // cau hinh cho phep truy cau api
-
-app.listen(5000, () => {
-  console.log("port 5000");
+const POST = process.env.PORT || 5000;
+app.listen(POST, () => {
+  console.log("port POST");
 });
