@@ -5,7 +5,6 @@ router.get("/:id", async (req, res) => {
   const id = req.params?.id;
   if (id) {
     const data = await ZingMp3.getSectionRelate(id);
-    console.log(id, data);
     res.json(data);
     return "";
   }

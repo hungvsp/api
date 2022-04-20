@@ -12,4 +12,4 @@ router.get('/:id',async(req,res) => {
     res.json({err:-1,mgs:'Incorect  id'})
 })
     
-module.exports = router 
+module.exports = router                 
